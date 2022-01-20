@@ -7,7 +7,7 @@ def most_frequent(s):
             dicti[i]+=1
     return dicti
 
-res=most_frequent('Mississippi')
-print(sorted(res.keys()))
-print(sorted(res.values()))
-
+stri=input("Enter a string: ")
+res=most_frequent(stri)
+for keys in sorted(res,key = res.get,reverse=True):
+  print(keys,"=",res[keys])
